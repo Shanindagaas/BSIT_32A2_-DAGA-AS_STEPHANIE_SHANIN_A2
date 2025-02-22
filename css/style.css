@@ -1,0 +1,77 @@
+
+body {
+    background-color: pink; 
+    color: #fff; 
+    font-family: Arial, sans-serif;
+}
+
+#header-middle-sub {
+    background-color: #6699CC;
+    display: table;
+    margin: 0 auto;
+    width: 897px;
+}
+
+
+img.float-left {
+    float: left;
+    margin-right: 15px; 
+    border-radius: 8px; 
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    background-color: #007bff; 
+    color: white;
+}
+
+
+header h1 {
+    padding: 10px;
+}
+
+
+.nav-link {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #343a40; 
+    color: white;
+    padding: 20px;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+form .form-group label {
+    font-weight: bold;
+}

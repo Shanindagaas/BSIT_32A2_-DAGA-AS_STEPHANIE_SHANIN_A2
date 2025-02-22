@@ -3,124 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stephanie Shanin M. Daga-as - Portfolio</title>
-    
-    <!-- Bootstrap CSS for responsive design -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABGa7fF1JUdbj6eeShLcuI2d5l2D0Zm1TujTxG5g9jr59WVG24DQjWm" crossorigin="anonymous">
-    
-    <!-- Link to external CSS file for custom styles -->
+    <title>Stephanie Shanin M. Daga-as</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="bg-dark text-white p-3">
-        <div class="container">
-            <h1>Stephanie Shanin M. Daga-as</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+
+    <header class="bg-secondary text-white text-center py-4">
+        <h1>Stephanie Shanin M. Daga-as</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+    <main class="container my-5">
+        <section id="home" class="mb-5">
+            <h2>Home</h2>
+            <img src="images/Snoopy welcome.jpg" alt="Your Image" class="float-left mr-4" width="100" height="100">
+            <p>Hello! My name is Stephanie Shanin Daga-as, 4th year college, graduating. I have been working in the industry for almost 6 years and have always loved to upskill. I do not code that much but I love to design things</p>
+        </section>
     
-    <!-- Home Section -->
-    <section id="home" class="container my-5">
-        <h2>Home</h2>
-        <p>Hello! My name is Stephanie Shanin Daga-as. I am a 4th-year college student, graduating soon. I have been working in the industry for almost 6 years and have always loved to upskill.</p>
-        <button id="hobbiesButton" class="btn btn-info">Click to See My Hobbies</button>
-    </section>
-    
-    <!-- About Section -->
-    <section id="about" class="container my-5">
-        <h2>About Me</h2>
-        <p>I'm a confident and adventurous individual with a passion for life's most exciting experiences. I thrive on energy, curiosity, and optimism. With an insatiable love for new horizons and innovative ideas, I continuously seek opportunities to grow and connect with like-minded individuals.</p>
-        <p>Join me on this journey as we explore the world together!</p>
         
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Education</h3>
-                <ul>
-                    <li>I am currently studying at Lyceum of Alabang.</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h3>School Activities</h3>
-                <ul>
-                    <li>I was once a Cadet Officer, but due to my busy schedule, I cannot do it anymore.</li>
-                </ul>
-            </div>
-        </div>
+        <section id="about" class="mb-5 clearfix">
+            <br>
+            <h2>About</h2>
+            <p>I'm a confident and adventurous individual with a passion for life's most exciting experiences. I thrive on energy, curiosity, and optimism. With an insatiable love for new horizons and innovative ideas, I continuously seek opportunities to grow and connect with like-minded individuals.</p>
+            <p>Join me on this journey as we explore the world together! Let me know if you'd like any further adjustments!</p>
+            <h3>Education</h3>
+            <p>I am currently studying at Lyceum of Alabang.</p>
+            <h3>School Activities</h3>
+            <p>I was once a cadet officer, but due to my busy schedule, I cannot do it anymore.</p>
+            <h3>Skills</h3>
+            <p>I have an IT specialist certification in database and networking. I also excel in admin and operation support, as well as technical support.</p>
+        </section>
 
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Skills</h3>
-                <ul>
-                    <li>IT Specialist in Database and Networking Certification.</li>
-                    <li>Excel in Admin and Operations Support.</li>
-                    <li>Experienced in Technical Support.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="container my-5">
-        <h2>Contact</h2>
-        <p>You can contact me here:</p>
-        <p><strong>Name:</strong> Stephanie Shanin Daga-as</p>
-        <p><strong>Number:</strong> 09456978693</p>
-        <p><strong>Email:</strong> 2705-21@itmlyceumofalabang.com</p>
+        <section id="contact" class="mb-5">
+            <h2>Contact</h2>
+            <p>You can contact me here: Stephanie Shanin Daga-as</p>
+            <p>Number: 09456978693</p>
+            <p>Email: 2705-21@itmlyceumofalabang.com</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="showHobbies()">Show Hobbies</button>
+            </form>
+        </section>
+    </main>
 
-        <h3>Contact Form</h3>
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            <div class="mb-3">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="subject" placeholder="Subject">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white text-center p-3">
-        <div class="container">
-            <p>&copy; 2025 Stephanie Shanin M. Daga-as. All Rights Reserved.</p>
-            <nav>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2023 Stephanie Shanin M. Daga-as</p>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="scripts.js"></script>
-    
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb3f3p5Wg9KllD2n0A9a7eJ6zmFz80B99KK+z2M7a5V9P8F7w" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0ZGJ5z8wr+4J3A7nWe52evVoMh5Hz0Xs2x4eVxxfyFL0pIN4" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
